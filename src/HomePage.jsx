@@ -88,8 +88,7 @@ const HomePage = () => {
         <div className="mt-10 flex flex-col justify-between  bg-black bg-opacity-75 bg-cover px-5 py-10 opacity-70 lg:flex-row lg:px-20">
           <div className="flex flex-col lg:mt-16">
             <h2 className="text-4xl font-bold leading-10 text-[#6b3ee7]">
-              Empower Deaf Users
-              <br /> Revonutionary <br /> Chat System
+              Empower Deaf Users Revonutionary <br /> Chat System
             </h2>
             <p className="mt-5 text-lg">
               Our website features an innovative chat messaging system
