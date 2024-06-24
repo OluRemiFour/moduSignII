@@ -1,6 +1,6 @@
 import HeroTwoImage from "./components/HeroTwoImage";
 import background5 from "./assets/images/background5.png";
-import Background6 from "./assets/images/background6.png";
+import Background6 from "./assets/images/Background6.png";
 import background7 from "./assets/images/background7.png";
 import background8 from "./assets/images/background8.png";
 
