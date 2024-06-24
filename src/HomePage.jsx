@@ -1,5 +1,8 @@
-import React from "react";
 import HeroTwoImage from "./components/HeroTwoImage";
+import background5 from "./assets/images/background5.png";
+import background7 from "./assets/images/background7.png";
+import background8 from "./assets/images/background8.png";
+
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -64,11 +67,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <img
-            src="src/assets/images/background5.png"
-            alt=""
-            className="mt-2 lg:mt-0 lg:h-[500px]"
-          />
+          <img src={background5} alt="" className="mt-2 lg:mt-0 lg:h-[500px]" />
         </div>
         <div className="mt-10 flex flex-col justify-between bg-black bg-opacity-75 bg-cover px-5 py-10 opacity-70 lg:flex-row lg:px-20">
           <img
@@ -76,7 +75,7 @@ const HomePage = () => {
             alt=""
             className="mt-2 lg:mt-0 lg:h-[500px]"
           />
-          <div className="flex flex-col lg:mt-16">
+          <div className="flex flex-col lg:mt-16 px-14">
             <h2 className="text-4xl font-bold leading-10 text-[#6b3ee7]">
               Real-time Sign <br /> Language Translation <br />
               Innovative Experience
@@ -107,14 +106,14 @@ const HomePage = () => {
             </ul>
           </div>
           <img
-            src="src/assets/images/background7.png"
+            src={background7}
             alt=""
             className="mt-2 lg:mt-0 lg:h-[500px]"
           />
         </div>
         <div className="mt-10 flex flex-col justify-between bg-black bg-opacity-75 bg-cover px-5 py-10 opacity-70 lg:flex-row lg:px-20">
           <img
-            src="src/assets/images/background8.png"
+            src={background8}
             alt=""
             className="mt-2 lg:mt-0 lg:h-[500px]"
           />

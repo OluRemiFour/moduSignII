@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -7,8 +6,10 @@ const NavBar = () => {
       <div className="flex flex-row items-center justify-between border-b-2 border-[#5b2ed4] px-2 py-3 lg:px-20">
         <div className="flex items-center gap-3">
           <img src="./src/assets/images/logo.png" alt="" />
-          <Link to="/"> <h1 className="text-xl font-normal text-white">ModuSign</h1></Link>
-         
+          <Link to="/">
+            {" "}
+            <h1 className="text-xl font-normal text-white">ModuSign</h1>
+          </Link>
         </div>
         <ul className="hidden gap-16 text-white lg:flex">
           <Link to="/">
