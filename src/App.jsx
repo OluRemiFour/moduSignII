@@ -11,8 +11,8 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<HomePage />} />
-  
-              <Route path="machine" element={<SignLanguageTranslator />} />
+
+            <Route path="machine" element={<SignLanguageTranslator />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -34,13 +34,13 @@
 //     if (isInitialized && model && !webcamRef.current) {
 //       const initWebcam = async () => {
 //         try {
-//           const webcam = new tmImage.Webcam(640, 480, true); 
+//           const webcam = new tmImage.Webcam(640, 480, true);
 //           await webcam.setup();
 //           await webcam.play();
 //           webcamRef.current = webcam;
 //           canvasRef.current.appendChild(webcam.canvas);
 //           webcam.canvas.width = 640;
-//           webcam.canvas.height = 480; 
+//           webcam.canvas.height = 480;
 //           requestAnimationFrame(loop);
 //         } catch (error) {
 //           console.error("Failed to initialize webcam:", error);
@@ -100,7 +100,7 @@
 //         justifyContent: "center",
 //         alignItems: "center",
 //         gap: "20px",
-      
+
 //       }}
 //     >
 //       <div style={{ fontSize: "xx-large" }}>Sign Language Translator</div>
@@ -126,7 +126,7 @@
 //         style={{
 //           position: "relative",
 //           display: "inline-block",
-//           width: "640px", 
+//           width: "640px",
 //           marginBottom: "5%",
 //           borderRadius: "20px"
 //         }}
@@ -155,8 +155,7 @@
 
 // export default SignLanguageTranslator;
 
-
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import * as tmImage from "@teachablemachine/image";
 import "@tensorflow/tfjs";
 
@@ -234,9 +233,11 @@ const SignLanguageTranslator = () => {
     });
 
     if (highestPrediction.probability >= predictionThreshold) {
-      setPredictionText(
-        ${highestPrediction.className}: ${highestPrediction.probability.toFixed(2)},
-      );
+      setPredictionText(`
+        ${highestPrediction.className}: ${highestPrediction.probability.toFixed(
+        2
+      )},
+      `);
     } else {
       setPredictionText("User");
     }
