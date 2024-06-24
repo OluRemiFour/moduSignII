@@ -2,11 +2,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage";
 import NavBar from "./components/NavBar";
 import SignLanguageTranslator from "./components/SignLanguageTranslator";
+import background from "./assets/images/background.png";
 
 function App() {
   return (
     <>
-      <div className="max-width-7xl mx-auto bg-[url('src/assets/images/background.png')] h-fit">
+      <div
+        className="max-width-7xl mx-auto h-fit"
+        style={{
+          backgroundImage: `url(${background})`,
+        }}
+      >
         <BrowserRouter>
           <NavBar />
           <Routes>

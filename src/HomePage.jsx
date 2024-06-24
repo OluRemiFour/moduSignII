@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-      <div className="mt-10 flex h-[100%] flex-col gap-2 text-xl text-white lg:mt-28">
+      <div className="mt-10 flex h-[100%] flex-col gap-2 text-xl text-white lg:mt-28 ">
         <h1 className="flex items-center justify-center  font-extrabold lg:text-5xl">
           <span className="font-extrabold text-[#5b2ed4] lg:text-5xl">
             ModuSign:
